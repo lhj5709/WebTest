@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ethereum</title>
+    <link rel="stylesheet" href="DBstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/e33ee4e0ba.js"></script>
+  </head>
+
+
+  <script type="text/javascript">
+  //<![CDATA[
+  function calcHeight(){
+    //find the height of the internal page
+
+    var the_height=
+    document.getElementById('the_iframe').contentWindow.
+    document.body.scrollHeight;
+
+    //change the height of the iframe
+    document.getElementById('the_iframe').height=
+    the_height;
+
+    //document.getElementById('the_iframe').scrolling = "no";
+    document.getElementById('the_iframe').style.overflow = "hidden";
+  }
+  //
+  </script>
+
+
+
+
+  <body>
+    <!--Contents - title-->
+    <section class="con_title">
+      <div class="container">
+        <h1>Ethereum</h1>
+        <p>what is Ethereum?</p>
+        <a href="#">Go to Wiki</a>
+      </div>
+    </section>
+
+    <!--Contents - body 01-->
+    <section class="con_body_01">
+      <div class="container">
+        <div class="text">
+          <i class="fa fa-history icon" aria-hidden="true"></i>
+          <h2>History</h2>
+          <p>Ethereum was initially described in a white paper by Vitalik Buterin,[11] a programmer involved with Bitcoin Magazine, in late 2013 with a goal of building decentralized applications.</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Ethereum#History">More info
+          <i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        </div>
+        <div class="text">
+          <i class="fa fa-question icon" aria-hidden="true"></i>
+          <h2>Etymology</h2>
+          <p>Vitalik Buterin picked the name Ethereum after browsing Wikipedia articles about elements and science fiction, when he found the name, noting, "I immediately realized that I liked it better than all of the other alternatives that I had seen</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Ethereum#Etymology">More info
+          <i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        </div>
+        <div class="text">
+          <i class="fa fa-btc icon" aria-hidden="true"></i>
+          <h2>Ethereum Classic?</h2>
+          <p>Ethereum Classic is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) functionality.</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Ethereum_Classic">More info
+          <i class="fa fa-info-circle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contents - body 02-->
+    <section class="con_body_02">
+      <div class="container">
+        <div class="photo">
+        </div>
+        <div class="text">
+          <h2>Vitalik Buterin</h2>
+          <p>Vitalik Buterin (Born January 31, 1994. Russian: Виталий Дмитриевич Бутерин) is a Russian-Canadian programmer and writer primarily known as a co-founder of Ethereum and as a co-founder of Bitcoin Magazine.</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Vitalik_Buterin">Go to Wiki</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contents - body 03-->
+    <section class="con_body_03">
+      <div class="container">
+        <div class="text">
+          <h2>What is Ethereum?</h2>
+          <p>Presented by Stephan Tual, CCO - (Twitter: @stephantual) Ethereum is a platform that makes it possible for any developer to write and distribute next-generation decentralized applications.</p>
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Vitalik_Buterin">Go to Wiki</a>
+        </div>
+        <div class="photo">
+          <iframe class="video" onload="calcHeight();" src="https://www.youtube.com/embed/Clw-qf1sUZg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footA">
+          <h2>Almaloco</h2>
+          <p>
+            서울특별시 송파구 방이동 168-1 금복빌딩 6층<br>
+            Tel : 070-4725-1040<br>
+            Fax : 070-4725-1041<br>
+            E-mail : hslim@almaloco.com<br>
+            Homepage : <a target="_blank" href="www.almaloco.com">www.almaloco.com</a>
+          </p>
+        </div>
+
+        <nav class="footB">
+          <div>
+            <h3>ABOUT</h3>
+            <ul>
+              <li><a href="#">Foundation</a></li>
+              <li><a href="#">Address</a></li>
+              <li><a href="#">Map</a></li>
+              <li><a href="#">Staff</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>SUPPORT</h3>
+            <ul>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Manual</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Question</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>CONTENTS</h3>
+            <ul>
+              <li><a href="#">Notice</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Developer</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+}
+ol{
+  border-right: 1px solid gray;
+  width: 100px;
+  padding: 20px;
+  margin: 0;
+}
+.gridclass{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+#grid ol{
+  padding-left: 20px;
+}
+#grid #article{
+  padding-left: 40px;
+}
+@media (max-width:600px) {
+  .gridclass{
+    display: block;
+  }
+  #grid ol{
+    border-right: 0;
+    width: 100px;
+  }
+}

@@ -16,6 +16,28 @@ body {
   margin: 0;
   font-family: 'Kavivanar', cursive;
 }
+/*header*/
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.headA {
+  display: inline-block;
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--main-color);
+  color: var(--text-bright-color);
+  font-family: 'Montserrat',sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
 /*con_title section*/
 .con_title .container{
   display: flex;
@@ -241,6 +263,38 @@ footer .container{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.footC{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat',sans-serif;
+}
+.footD{
+  margin-top: 20px;
+}
+.footD ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.footD a{
+  display: block;
+  color: inherit;
+  padding: 0;
+  margin-right: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  border: solid 1px currentColor;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+}
+.footD a:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+
 /*Media Query*/
 @media (min-width:768px) {
   .con_body_01 .container{
@@ -270,6 +324,29 @@ footer .container{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+  }
+  footer .container{
+    display: grid;
+    grid-template-areas:
+    "footA footA footB footB footB"
+    "footC footC footC footC footC";
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;;
+  }
+  footer .footA{
+    grid-area: footA;
+  }
+  footer .footB{
+    grid-area: footB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .footC{
+    grid-area: footC;
+  }
+  footer .footB div:not(:first-child){
+    margin-left: 40px;
   }
 }
 

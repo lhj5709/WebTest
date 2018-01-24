@@ -7,6 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/e33ee4e0ba.js"></script>
+
+    <style>
+    .sr-only{
+      position: absolute;
+      width: 1px;
+      height: 10px;
+      padding:0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+    </style>
   </head>
 
 
@@ -33,6 +46,20 @@
 
 
   <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="headA">ALMALOCO</a>
+
+        <nav class="headB">
+          <ul>
+            <li><a href="#">Top</a></li>
+            <li><a href="#">Contents</a></li>
+            <li><a href="#">QnA</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!--Contents - title-->
     <section class="con_title">
       <div class="container">
@@ -101,12 +128,37 @@
         <div class="footA">
           <h2>Almaloco</h2>
           <p>
-            서울특별시 송파구 방이동 168-1 금복빌딩 6층<br>
+            서울특별시 송파구 방이동 169-1 금복빌딩 6층<br>
             Tel : 070-4725-1040<br>
             Fax : 070-4725-1041<br>
             E-mail : hslim@almaloco.com<br>
             Homepage : <a target="_blank" href="www.almaloco.com">www.almaloco.com</a>
           </p>
+
+          <nav class="footD">
+            <ul>
+              <li><a href="#">
+                <span class="fa fa-twitter" title="Twitter" aria-hidden="true"></span>
+                <span class="sr-only">Twitter</span>
+              </a></li>
+              <li><a href="#">
+                <span class="fa fa-facebook" title="Facebook" aria-hidden="true"></span>
+                <span class="sr-only">Twitter</span>
+              </a></li>
+              <li><a href="#">
+                <span class="fa fa-google-plus" title="Google Plus" aria-hidden="true"></span>
+                <span class="sr-only">Twitter</span>
+              </a></li>
+              <li><a href="#">
+                <span class="fa fa-instagram" title="Instagram" aria-hidden="true"></span>
+                <span class="sr-only">Twitter</span>
+              </a></li>
+              <li><a href="#">
+                <span class="fa fa-youtube" title="Youtube" aria-hidden="true"></span>
+                <span class="sr-only">Twitter</span>
+              </a></li>
+            </ul>
+          </nav>
         </div>
 
         <nav class="footB">
@@ -135,9 +187,14 @@
               <li><a href="#">Business</a></li>
               <li><a href="#">Profile</a></li>
               <li><a href="#">Developer</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
           </div>
         </nav>
+
+        <div class="footC">
+          © ALMALOCO corp. All rights reserved.
+        </div>
       </div>
     </footer>
 

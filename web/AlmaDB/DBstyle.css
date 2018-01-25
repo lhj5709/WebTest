@@ -23,7 +23,12 @@ header{
   left: 0;
   z-index: 100;
   width: 100%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
+}
+header .container_small{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headA {
@@ -36,6 +41,35 @@ header{
   font-family: 'Montserrat',sans-serif;
   font-size: 24px;
   text-decoration: none;
+}
+.headB ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.headB a{
+  display: block;
+  padding: 15px;
+  color: inherit;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+.headB a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.headC{
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 28px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.headC:hover{
+  opacity: 0.3;
 }
 
 /*con_title section*/
@@ -51,7 +85,7 @@ header{
   color: var(--text-bright-color);
   margin-bottom: 10px;
 
-  background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://s.aolcdn.com/hss/storage/midas/da787a057547fcf4c5840306c6fbc431/205801623/ethereum-editorial+.jpg);
+  background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(http://i.imgur.com/IP3mLpo.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -297,6 +331,23 @@ footer .container{
 
 /*Media Query*/
 @media (min-width:768px) {
+  header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headC{
+    display: none;
+  }
+  .headB{
+    display: block !important;
+  }
+  .headB ul{
+    display: flex;
+  }
   .con_body_01 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -352,6 +403,9 @@ footer .container{
 
 @media (max-width:768px) {
 
+  .headB{
+    display: none;
+  }
   .con_title .container{
     margin-bottom: 20px;
   }

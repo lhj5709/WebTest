@@ -40,15 +40,29 @@
     document.getElementById('the_iframe').style.overflow = "hidden";
   }
   //
+
   </script>
 
-
+  <script src="http://code.jquery/com/jquery-3.2.1.min.js"></script>
+  <script>
+    $(FUNCTION(){
+      $(".headC").click(function(){
+        $(".headB").slideToggle();
+      });
+    });
+  </script>
 
 
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="headA">ALMALOCO</a>
+        <div class="container_small">
+          <a href="index.html" class="headA">ALMALOCO</a>
+
+          <button type="button" class="headC">
+            <span class="fa fa-bars" title="MENU"></span>
+          </button>
+        </div>
 
         <nav class="headB">
           <ul>

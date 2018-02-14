@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="VineInputSchedule.css"/>
+    <!--Add jquery -->
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="VineInput.js"></script>
+
+
+    <title></title>
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+    <!-- 상단 날짜 영역 -->
+    <div class="SelectedDate">
+      <h3><span class="SQ_Date">00-00-00(?)</span></h3>
+    </div>
+
+    <form action="#" method="post">
+      <div class="InputContentsArea">
+        <fieldset>
+          <div class="Event">
+            <div id="title"><h4>이벤트</h4></div>
+            <div id="contents">
+              <div id="inputarea_event">
+                <span id="minusbutton"><button type="button">-</button></span>
+                <input type="text" value="" />
+              </div>
+              <div id="plusbutton"><button type="button">+</button></div>
+            </div>
+          </div>
+
+          <div class="Schedule">
+          <div id="title"><h4>일정</h4></div>
+            <div id="contents">
+              <div id="inputarea_schedule">
+                <div id="minusbuttonset">
+                  <span id="minusbutton"><button type="button">-</button></span>
+                  <span id="timeinputset">
+                    <select id="startnoon" name="startnoon"></select>
+                    <select id="starthour" name="starthour"></select>
+                    <select id="startmin" name="startmin"></select>
+                    ~
+                    <select id="endnoon" name="endnoon"></select>
+                    <select id="endhour" name="endhour"></select>
+                    <select id="endmin" name="endmin"></select>
+                  </span>
+                  <span id="scheduletext"><input type="text" value="" /></span>
+                </div>
+                <div id="plusbuttonset">
+                    <div id="plusbutton"><button type="button">+</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="GeniEx">
+            <div id="title"><h4>지닉스</h4></div>
+            <div id="contents">
+              <span id="minusbutton"><button type="button">-</button></span>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+        <!-- 하단 버튼 영역 -->
+        <div class="ButtonArea">
+          <div class="Buttons">
+            <div id="button_1"><button type="button">미리보기</button></div>
+            <div id="button_2"><button type="button">취소</button></div>
+            <div id="button_3"><button type="button">저장</button></div>
+          </div>
+        </div>
+
+    </form>
+
+    <script>
+      // String Query
+      $(".SelectedDate .SQ_Date").html(qs["date"]);
+
+      // Initial and Load data
+      var ScheduleInputData = {};
+      ScheduleDataInitialize();
+
+      //alert($(".SelectedDate .SQ_Date").textContent);
+      alert($(".SelectedDate .SQ_Date").text());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+import requests
+import json
+
+apikey = "9a883121f65e2505fb6d3bd3e6cab4f6"
+
+# 도시 지정
+cities = ["Seoul,KR", "Tokyo,JP", " New York,US"]
+
+# API 지정
+api = "http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={key}"
+
+# 켈빈 온도를 섭씨 온도로 변환하는 함수
+k2c = lambda k : k - 273.15
+
+for name in cities:
+    # 데이터 가져오기
+    url = api.format(city=name, key=apikey)
+    r = requests.get(url)
+    data = json.loads(r.text)
+    # 결과출력
+    print("+ 도시 = ", data["name"])
+    print("| 날씨 : ", data["weather"][0]["description"])
+    print("| 최저기온 : ", k2c(data["main"]["temp_min"]))

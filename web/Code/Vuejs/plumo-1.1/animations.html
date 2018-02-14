@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Plumo Admin - Animations</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,400,200,100,100italic,300,300italic" rel="stylesheet">
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Weather icon -->
+        <link href="vendor/weather-icons/css/weather-icons.min.css" rel="stylesheet">
+        <!-- animate.css -->
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+        <!-- handsontable -->
+        <link href="vendor/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
+        <!-- c3 -->
+        <link href="vendor/c3/c3.min.css" rel="stylesheet">
+        <!-- Bootstrap select -->
+        <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+        <!-- bootgrid -->
+        <link href="vendor/jquery.bootgrid/dist/jquery.bootgrid.min.css" rel="stylesheet">
+        <!-- Nouislider -->
+        <link href="vendor/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+        <!-- fullcalendar -->
+        <link href="vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <!-- pickadate -->
+        <link href="vendor/pickadate/lib/compressed/themes/default.css" rel="stylesheet">
+        <link href="vendor/pickadate/lib/compressed/themes/default.date.css" rel="stylesheet">
+        <!-- Pygments -->
+        <link href="css/syntax-highlight/pygments.css" rel="stylesheet">
+        <!-- Colors helpers -->
+        <link href="css/helpers/colors.css" rel="stylesheet">
+        <!-- Style -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Dashboard wrapper -->
+        <div id="dashboard__wrapper">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <div class="dashboard__overlay"></div>
+                <!-- Sidebar -->
+                <div class="dashboard__sidebar">
+                    <div class="dashboard__sidebar-scroll">
+                        <ul id="menu">
+                            <li><a href="index.html"><i class="material-icons">&#xE42A;</i>Dashboard</a>
+                            </li>
+                            <li><a href="charts.html"><i class="material-icons">&#xE24B;</i>Charts</a>
+                            </li>
+                            <li><a href="forms.html"><i class="material-icons">&#xE890;</i>Forms</a>
+                            </li>
+                            <li><a href="tables.html"><i class="material-icons">&#xE8EC;</i>Tables</a>
+                            </li>
+                            <li><a href="calendar.html"><i class="material-icons">&#xE878;</i>Calendar</a>
+                            </li>
+                            <li class="title">CSS Helpers</li>
+                            <li><a href="grid-system.html"><i class="material-icons">&#xE42B;</i>Extended grid system</a>
+                            </li>
+                            <li><a href="background-color.html"><i class="material-icons">&#xE3B7;</i>Background color</a>
+                            </li>
+                            <li><a href="text-color.html"><i class="material-icons">&#xE22B;</i>Text color</a>
+                            </li>
+                            <li><a href="animations.html" class="active"><i class="material-icons">&#xE02C;</i>Animations</a>
+                            </li>
+                            <li class="title">Ui elements</li>
+                            <li><a href="typography.html"><i class="material-icons">&#xE167;</i>Typography</a>
+                            </li>
+                            <li><a href="icons.html"><i class="material-icons">&#xE876;</i>Icons</a>
+                            </li>
+                            <li><a href="buttons.html"><i class="material-icons">&#xE837;</i>Buttons</a>
+                            </li>
+                            <li><a href="modals.html"><i class="material-icons">&#xE0C9;</i>Modals</a>
+                            </li>
+                            <li><a href="other-ui-elements.html"><i class="material-icons">&#xE5D3;</i>Others</a>
+                            </li>
+                            <li class="title">Pages</li>
+                            <li><a href="spreadsheet.html"><i class="material-icons">&#xE242;</i>Spreadsheet</a>
+                            </li>
+                            <li><a href="login.html"><i class="material-icons">&#xE898;</i>Login</a>
+                            </li>
+                            <li><a href="404.html"><i class="material-icons">&#xE001;</i>404</a>
+                            </li>
+                            <li><a href="blank.html"><i class="material-icons">&#xE24D;</i>Blank page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / Sidebar -->
+                <!-- Content -->
+                <div class="dashboard__content">
+                    <!-- Topbar -->
+                    <div class="dashboard__topbar container-fluid">
+                        <ul class="list-inline">
+                            <li><a href="#" class="sidebar-toggle"> <i class="material-icons">&#xE5D2;</i></a></li>
+                            <li class="breadcrumnb"><a href="/">Plumo Admin</a><i class="material-icons">&#xE5CC;</i>
+                                <h1>Animations</h1>
+                            </li>
+                            <li class="pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="#" class="hub-toggle"><i class="material-icons">&#xE7F4;</i><span class="badge bg-pink">4</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- / Topbar -->
+                    <!-- Inner -->
+                    <div class="dashboard__inner">
+                        <div class="container-fluid">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h2 class="card__title">Animations playground</h2>
+                                </div>
+                                <div class="card__content card__content--padding1 text-center">
+                                    <div class="animations_example">
+                                        <div id="animations_example__class">bounce</div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <select data-size="9" class="animations_example__select selectpicker form-control">
+                                                    <optgroup label="Attention Seekers">
+                                                        <option value="bounce">bounce</option>
+                                                        <option value="flash">flash</option>
+                                                        <option value="pulse">pulse</option>
+                                                        <option value="rubberBand">rubberBand</option>
+                                                        <option value="shake">shake</option>
+                                                        <option value="swing">swing</option>
+                                                        <option value="tada">tada</option>
+                                                        <option value="wobble">wobble</option>
+                                                        <option value="jello">jello</option>
+                                                    </optgroup>
+                                                    <optgroup label="Bouncing Entrances">
+                                                        <option value="bounceIn">bounceIn</option>
+                                                        <option value="bounceInDown">bounceInDown</option>
+                                                        <option value="bounceInLeft">bounceInLeft</option>
+                                                        <option value="bounceInRight">bounceInRight</option>
+                                                        <option value="bounceInUp">bounceInUp</option>
+                                                    </optgroup>
+                                                    <optgroup label="Bouncing Exits">
+                                                        <option value="bounceOut">bounceOut</option>
+                                                        <option value="bounceOutDown">bounceOutDown</option>
+                                                        <option value="bounceOutLeft">bounceOutLeft</option>
+                                                        <option value="bounceOutRight">bounceOutRight</option>
+                                                        <option value="bounceOutUp">bounceOutUp</option>
+                                                    </optgroup>
+                                                    <optgroup label="Fading Entrances">
+                                                        <option value="fadeIn">fadeIn</option>
+                                                        <option value="fadeInDown">fadeInDown</option>
+                                                        <option value="fadeInDownBig">fadeInDownBig</option>
+                                                        <option value="fadeInLeft">fadeInLeft</option>
+                                                        <option value="fadeInLeftBig">fadeInLeftBig</option>
+                                                        <option value="fadeInRight">fadeInRight</option>
+                                                        <option value="fadeInRightBig">fadeInRightBig</option>
+                                                        <option value="fadeInUp">fadeInUp</option>
+                                                        <option value="fadeInUpBig">fadeInUpBig</option>
+                                                    </optgroup>
+                                                    <optgroup label="Fading Exits">
+                                                        <option value="fadeOut">fadeOut</option>
+                                                        <option value="fadeOutDown">fadeOutDown</option>
+                                                        <option value="fadeOutDownBig">fadeOutDownBig</option>
+                                                        <option value="fadeOutLeft">fadeOutLeft</option>
+                                                        <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                                                        <option value="fadeOutRight">fadeOutRight</option>
+                                                        <option value="fadeOutRightBig">fadeOutRightBig</option>
+                                                        <option value="fadeOutUp">fadeOutUp</option>
+                                                        <option value="fadeOutUpBig">fadeOutUpBig</option>
+                                                    </optgroup>
+                                                    <optgroup label="Flippers">
+                                                        <option value="flip">flip</option>
+                                                        <option value="flipInX">flipInX</option>
+                                                        <option value="flipInY">flipInY</option>
+                                                        <option value="flipOutX">flipOutX</option>
+                                                        <option value="flipOutY">flipOutY</option>
+                                                    </optgroup>
+                                                    <optgroup label="Lightspeed">
+                                                        <option value="lightSpeedIn">lightSpeedIn</option>
+                                                        <option value="lightSpeedOut">lightSpeedOut</option>
+                                                    </optgroup>
+                                                    <optgroup label="Rotating Entrances">
+                                                        <option value="rotateIn">rotateIn</option>
+                                                        <option value="rotateInDownLeft">rotateInDownLeft</option>
+                                                        <option value="rotateInDownRight">rotateInDownRight</option>
+                                                        <option value="rotateInUpLeft">rotateInUpLeft</option>
+                                                        <option value="rotateInUpRight">rotateInUpRight</option>
+                                                    </optgroup>
+                                                    <optgroup label="Rotating Exits">
+                                                        <option value="rotateOut">rotateOut</option>
+                                                        <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                                                        <option value="rotateOutDownRight">rotateOutDownRight</option>
+                                                        <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                                                        <option value="rotateOutUpRight">rotateOutUpRight</option>
+                                                    </optgroup>
+                                                    <optgroup label="Sliding Entrances">
+                                                        <option value="slideInUp">slideInUp</option>
+                                                        <option value="slideInDown">slideInDown</option>
+                                                        <option value="slideInLeft">slideInLeft</option>
+                                                        <option value="slideInRight">slideInRight</option>
+                                                    </optgroup>
+                                                    <optgroup label="Sliding Exits">
+                                                        <option value="slideOutUp">slideOutUp</option>
+                                                        <option value="slideOutDown">slideOutDown</option>
+                                                        <option value="slideOutLeft">slideOutLeft</option>
+                                                        <option value="slideOutRight">slideOutRight</option>
+                                                    </optgroup>
+                                                    <optgroup label="Zoom Entrances">
+                                                        <option value="zoomIn">zoomIn</option>
+                                                        <option value="zoomInDown">zoomInDown</option>
+                                                        <option value="zoomInLeft">zoomInLeft</option>
+                                                        <option value="zoomInRight">zoomInRight</option>
+                                                        <option value="zoomInUp">zoomInUp</option>
+                                                    </optgroup>
+                                                    <optgroup label="Zoom Exits">
+                                                        <option value="zoomOut">zoomOut</option>
+                                                        <option value="zoomOutDown">zoomOutDown</option>
+                                                        <option value="zoomOutLeft">zoomOutLeft</option>
+                                                        <option value="zoomOutRight">zoomOutRight</option>
+                                                        <option value="zoomOutUp">zoomOutUp</option>
+                                                    </optgroup>
+                                                    <optgroup label="Specials">
+                                                        <option value="hinge">hinge</option>
+                                                        <option value="rollIn">rollIn</option>
+                                                        <option value="rollOut">rollOut</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <div class="animations_example__btn btn btn-big btn-block bg-orange white">Animate again</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__footer"></div>
+                            </div>
+                            <div class="card">
+                                <div class="card__header bg-indigo-400 card__header--padding1">
+                                    <h2 class="card__title white">Usage</h2>
+                                </div>
+                                <div class="card__content card__content--padding1"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"animated bounce"</span><span class="nt">&gt;</span>
+	Animated content
+<span class="nt">&lt;/div&gt;</span>
+</pre>
+                                    <p> </p>Replace the class <code>bounce</code> with one of the classes above.
+                                </div>
+                                <div class="card__footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Inner -->
+                </div>
+                <!-- / Content -->
+                <!-- Hub -->
+                <div class="dashboard__hub">
+                    <div class="dashboard__hub-scroll">
+                        <div class="hub">
+                            <ul class="hub__filters">
+                                <li class="active"><a href="#" class="hub__filter active">All</a></li>
+                                <li><a href="#" data-filter="email" class="hub__filter">Emails</a></li>
+                                <li><a href="#" data-filter="agenda" class="hub__filter">Agenda</a></li>
+                                <li><a href="#" data-filter="notification" class="hub__filter">Alerts</a></li>
+                                <li><a href="#" data-filter="chat" class="hub__filter">Chat</a></li>
+                            </ul>
+                            <ul class="hub__inner">
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">John Doe</span><span class="hub__entry-excerpt">Ad regiis carpento oppidum mandato agebatur nihi...</span><span class="hub__entry-time">5 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--agenda">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--agenda"><i class="material-icons">&#xE616;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Meeting with Daniel</span><span class="hub__entry-excerpt">Bellatores porrigitur gentes nec</span><span class="hub__entry-time">14 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--notification">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--notification"><i class="material-icons">&#xE7F4;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">New purchase</span><span class="hub__entry-excerpt">Suae rapidi praefectus ad mitigabat vel ad fluminis</span><span class="hub__entry-time">18 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--chat">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--chat"><i class="material-icons">&#xE0B7;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Conversation with David</span><span class="hub__entry-excerpt">Ad regiis carpento oppidum mandato agebatur nihil..</span><span class="hub__entry-time">47 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Dennis Bernard</span><span class="hub__entry-excerpt">Cautela graves aemulis sed cetera cetera...</span><span class="hub__entry-time">57 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Jordan Wilson</span><span class="hub__entry-excerpt">Ubi velut exaggerantium pendere cruentae velut...</span><span class="hub__entry-time">1 hour ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--agenda">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--agenda"><i class="material-icons">&#xE616;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Diner with Bill</span><span class="hub__entry-excerpt">Aliquotiens actus molliverunt quoque</span><span class="hub__entry-time">2 hours ago</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Hub -->
+            </div>
+            <!-- / Dashboard -->
+        </div>
+        <!-- / Dashboard wrapper -->
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- handsontable -->
+        <script src="vendor/handsontable/dist/handsontable.full.min.js"></script>
+        <!-- d3 -->
+        <script src="vendor/d3/d3.min.js"></script>
+        <!-- c3 -->
+        <script src="vendor/c3/c3.min.js"></script>
+        <!-- Bootstrap select -->
+        <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+        <!-- Bootgrid -->
+        <script src="vendor/jquery.bootgrid/dist/jquery.bootgrid.min.js"></script>
+        <!-- Nouislider -->
+        <script src="vendor/nouislider/distribute/nouislider.min.js"></script>
+        <!-- Nicescroll -->
+        <script src="vendor/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+        <!-- Moment -->
+        <script src="vendor/moment/min/moment.min.js"></script>
+        <!-- fullcalendar -->
+        <script src="vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+        <!-- pickadate -->
+        <script src="vendor/pickadate/lib/compressed/picker.js"></script>
+        <script src="vendor/pickadate/lib/compressed/picker.date.js"></script>
+        <!-- App -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

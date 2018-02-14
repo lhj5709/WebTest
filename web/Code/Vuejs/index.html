@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>VueJS Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Conditionals</h1>
+      <button v-on:click="error=!error">ToggleError</button>
+      <button v-on:click="success = !success">Toggle Success</button>
+      <p v-if="error">ERRROR!!</p>
+      <p v-else-if="success">SUCCESS!!</p>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

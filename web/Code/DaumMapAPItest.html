@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="DaumMapAPI.css" />
+    <!--Add jquery -->
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <!--Daum Map -->
+    <!-- services와 clusterer, drawing 라이브러리 불러오기 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c0b192d86c6d04f87263ca5594c1ce43&libraries=services,clusterer,drawing"></script>
+    <!-- JavaScript -->
+    <script src="DaumMapAPI.js"></script>
+
+    <title>(Almaloco)키워드로 장소검색하고 목록으로 표출하기</title>
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+    <div class="header">
+        <img id="Almaloco_logo_top" src="logo_3.png" />
+    </div>
+
+    <div id="SelectedAddress">
+      <h4>Position : <input id="SelectedPosition" type="text" value="" /></h4>
+      <h4>MapLevel : <input id="SelectedMapLevel" type="text" value="" /></h4>
+      <h4>Address : <input id="SelectedAddressInput" type="text" value="" /></h4>
+      <h4 id="RoadAddressBlock" style="display:none;">RoadAddress : <input id="SelectedRoadAddressInput" type="text" value="" /></h4>
+    </div>
+
+    <div class="map_wrap">
+    <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+      <div id="menu_wrap" class="bg_white">
+        <div class="option">
+            <div>
+                <form onsubmit="searchPlaces(); return false;">
+                    키워드 : <input type="text" value="이태원 맛집" id="keyword" size="15">
+                    <button type="submit">검색하기</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
+      </div>
+    </div>
+    <script>
+      // 마커를 담을 배열입니다
+      var markers = [];
+
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+          mapOption = {
+              center: new daum.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+          };
+
+      // 지도를 생성합니다
+      var map = new daum.maps.Map(mapContainer, mapOption);
+
+      // 장소 검색 객체를 생성합니다
+      var ps = new daum.maps.services.Places();
+
+      // 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
+      var infowindow = new daum.maps.InfoWindow({zIndex:1});
+
+      // 좌표 -> 주소 변환객체 생성
+      var geocoder = new daum.maps.services.Geocoder();
+
+      // 키워드로 장소를 검색합니다
+      searchPlaces();
+
+
+    </script>
+  </body>
+</html>

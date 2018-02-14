@@ -1,0 +1,92 @@
+
+body {
+  max-width: 1000px;
+}
+
+.InputContentsArea button {
+  width: 25px;
+  height: 25px;
+}
+.InputContentsArea #plusbutton {
+  padding: 0;
+  padding-left: 12.5px;
+  margin-top: 10px;
+  justify-self: center;
+}
+.InputContentsArea #minusbutton {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  justify-self: center;
+  grid-area: mb;
+}
+.InputContentsArea #inputarea_event {
+  display: inline-grid;
+  grid-template-columns: 50px 300px;
+  height: 25px;
+  margin-top: 10px;
+  justify-self: center;
+}
+.InputContentsArea #minusbuttonset{
+  display: inline-grid;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+  justify-self: center;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas: "mb ti" ". st";
+}
+.InputContentsArea #timeinputset{
+  grid-area: ti;
+}
+.InputContentsArea #scheduletext{
+  grid-area: st;
+  margin-top: 10px;
+}
+
+
+.Event{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.Event #contents{
+  align-self: center;
+}
+.Schedule{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.Schedule #contents{
+  align-self: center;
+}
+
+.GeniEx{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.GeniEx #contents{
+  align-self: center;
+}
+
+.ButtonArea {
+  padding: 50px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.ButtonArea .Buttons {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ButtonArea .Buttons #button_1 {
+  width: 120px;
+  justify-self: center;
+}
+.ButtonArea .Buttons #button_2 {
+  width: 120px;
+  justify-self: center;
+}
+.ButtonArea .Buttons #button_3 {
+  width: 120px;
+  justify-self: center;
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Plumo Admin - Text color</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,400,200,100,100italic,300,300italic" rel="stylesheet">
+        <!-- Material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Weather icon -->
+        <link href="vendor/weather-icons/css/weather-icons.min.css" rel="stylesheet">
+        <!-- animate.css -->
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+        <!-- handsontable -->
+        <link href="vendor/handsontable/dist/handsontable.full.min.css" rel="stylesheet">
+        <!-- c3 -->
+        <link href="vendor/c3/c3.min.css" rel="stylesheet">
+        <!-- Bootstrap select -->
+        <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+        <!-- bootgrid -->
+        <link href="vendor/jquery.bootgrid/dist/jquery.bootgrid.min.css" rel="stylesheet">
+        <!-- Nouislider -->
+        <link href="vendor/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+        <!-- fullcalendar -->
+        <link href="vendor/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <!-- pickadate -->
+        <link href="vendor/pickadate/lib/compressed/themes/default.css" rel="stylesheet">
+        <link href="vendor/pickadate/lib/compressed/themes/default.date.css" rel="stylesheet">
+        <!-- Pygments -->
+        <link href="css/syntax-highlight/pygments.css" rel="stylesheet">
+        <!-- Colors helpers -->
+        <link href="css/helpers/colors.css" rel="stylesheet">
+        <!-- Style -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Dashboard wrapper -->
+        <div id="dashboard__wrapper">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <div class="dashboard__overlay"></div>
+                <!-- Sidebar -->
+                <div class="dashboard__sidebar">
+                    <div class="dashboard__sidebar-scroll">
+                        <ul id="menu">
+                            <li><a href="index.html"><i class="material-icons">&#xE42A;</i>Dashboard</a>
+                            </li>
+                            <li><a href="charts.html"><i class="material-icons">&#xE24B;</i>Charts</a>
+                            </li>
+                            <li><a href="forms.html"><i class="material-icons">&#xE890;</i>Forms</a>
+                            </li>
+                            <li><a href="tables.html"><i class="material-icons">&#xE8EC;</i>Tables</a>
+                            </li>
+                            <li><a href="calendar.html"><i class="material-icons">&#xE878;</i>Calendar</a>
+                            </li>
+                            <li class="title">CSS Helpers</li>
+                            <li><a href="grid-system.html"><i class="material-icons">&#xE42B;</i>Extended grid system</a>
+                            </li>
+                            <li><a href="background-color.html"><i class="material-icons">&#xE3B7;</i>Background color</a>
+                            </li>
+                            <li><a href="text-color.html" class="active"><i class="material-icons">&#xE22B;</i>Text color</a>
+                            </li>
+                            <li><a href="animations.html"><i class="material-icons">&#xE02C;</i>Animations</a>
+                            </li>
+                            <li class="title">Ui elements</li>
+                            <li><a href="typography.html"><i class="material-icons">&#xE167;</i>Typography</a>
+                            </li>
+                            <li><a href="icons.html"><i class="material-icons">&#xE876;</i>Icons</a>
+                            </li>
+                            <li><a href="buttons.html"><i class="material-icons">&#xE837;</i>Buttons</a>
+                            </li>
+                            <li><a href="modals.html"><i class="material-icons">&#xE0C9;</i>Modals</a>
+                            </li>
+                            <li><a href="other-ui-elements.html"><i class="material-icons">&#xE5D3;</i>Others</a>
+                            </li>
+                            <li class="title">Pages</li>
+                            <li><a href="spreadsheet.html"><i class="material-icons">&#xE242;</i>Spreadsheet</a>
+                            </li>
+                            <li><a href="login.html"><i class="material-icons">&#xE898;</i>Login</a>
+                            </li>
+                            <li><a href="404.html"><i class="material-icons">&#xE001;</i>404</a>
+                            </li>
+                            <li><a href="blank.html"><i class="material-icons">&#xE24D;</i>Blank page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- / Sidebar -->
+                <!-- Content -->
+                <div class="dashboard__content">
+                    <!-- Topbar -->
+                    <div class="dashboard__topbar container-fluid">
+                        <ul class="list-inline">
+                            <li><a href="#" class="sidebar-toggle"> <i class="material-icons">&#xE5D2;</i></a></li>
+                            <li class="breadcrumnb"><a href="/">Plumo Admin</a><i class="material-icons">&#xE5CC;</i>
+                                <h1>Text color</h1>
+                            </li>
+                            <li class="pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="#" class="hub-toggle"><i class="material-icons">&#xE7F4;</i><span class="badge bg-pink">4</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- / Topbar -->
+                    <!-- Inner -->
+                    <div class="dashboard__inner">
+                        <div class="container-fluid">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h2 class="card__title">Material design colors</h2>
+                                    <h3 class="card__subtitle">a lot of classes to fit your needs</h3>
+                                </div>
+                                <div class="card__content txt_colors_examples__wrapper">
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example red"><span>.red</span></div>
+                                        <div class="txt_color_example red-900"><span>.red-900</span></div>
+                                        <div class="txt_color_example red-800"><span>.red-800</span></div>
+                                        <div class="txt_color_example red-700"><span>.red-700</span></div>
+                                        <div class="txt_color_example red-600"><span>.red-600</span></div>
+                                        <div class="txt_color_example red-500"><span>.red-500</span></div>
+                                        <div class="txt_color_example red-400"><span>.red-400</span></div>
+                                        <div class="txt_color_example red-300"><span>.red-300</span></div>
+                                        <div class="txt_color_example red-200"><span>.red-200</span></div>
+                                        <div class="txt_color_example red-100"><span>.red-100</span></div>
+                                        <div class="txt_color_example red-50"><span>.red-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example pink"><span>.pink</span></div>
+                                        <div class="txt_color_example pink-900"><span>.pink-900</span></div>
+                                        <div class="txt_color_example pink-800"><span>.pink-800</span></div>
+                                        <div class="txt_color_example pink-700"><span>.pink-700</span></div>
+                                        <div class="txt_color_example pink-600"><span>.pink-600</span></div>
+                                        <div class="txt_color_example pink-500"><span>.pink-500</span></div>
+                                        <div class="txt_color_example pink-400"><span>.pink-400</span></div>
+                                        <div class="txt_color_example pink-300"><span>.pink-300</span></div>
+                                        <div class="txt_color_example pink-200"><span>.pink-200</span></div>
+                                        <div class="txt_color_example pink-100"><span>.pink-100</span></div>
+                                        <div class="txt_color_example pink-50"><span>.pink-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example purple"><span>.purple</span></div>
+                                        <div class="txt_color_example purple-900"><span>.purple-900</span></div>
+                                        <div class="txt_color_example purple-800"><span>.purple-800</span></div>
+                                        <div class="txt_color_example purple-700"><span>.purple-700</span></div>
+                                        <div class="txt_color_example purple-600"><span>.purple-600</span></div>
+                                        <div class="txt_color_example purple-500"><span>.purple-500</span></div>
+                                        <div class="txt_color_example purple-400"><span>.purple-400</span></div>
+                                        <div class="txt_color_example purple-300"><span>.purple-300</span></div>
+                                        <div class="txt_color_example purple-200"><span>.purple-200</span></div>
+                                        <div class="txt_color_example purple-100"><span>.purple-100</span></div>
+                                        <div class="txt_color_example purple-50"><span>.purple-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example deep-purple"><span>.deep-purple</span></div>
+                                        <div class="txt_color_example deep-purple-900"><span>.deep-purple-900</span></div>
+                                        <div class="txt_color_example deep-purple-800"><span>.deep-purple-800</span></div>
+                                        <div class="txt_color_example deep-purple-700"><span>.deep-purple-700</span></div>
+                                        <div class="txt_color_example deep-purple-600"><span>.deep-purple-600</span></div>
+                                        <div class="txt_color_example deep-purple-500"><span>.deep-purple-500</span></div>
+                                        <div class="txt_color_example deep-purple-400"><span>.deep-purple-400</span></div>
+                                        <div class="txt_color_example deep-purple-300"><span>.deep-purple-300</span></div>
+                                        <div class="txt_color_example deep-purple-200"><span>.deep-purple-200</span></div>
+                                        <div class="txt_color_example deep-purple-100"><span>.deep-purple-100</span></div>
+                                        <div class="txt_color_example deep-purple-50"><span>.deep-purple-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example indigo"><span>.indigo</span></div>
+                                        <div class="txt_color_example indigo-900"><span>.indigo-900</span></div>
+                                        <div class="txt_color_example indigo-800"><span>.indigo-800</span></div>
+                                        <div class="txt_color_example indigo-700"><span>.indigo-700</span></div>
+                                        <div class="txt_color_example indigo-600"><span>.indigo-600</span></div>
+                                        <div class="txt_color_example indigo-500"><span>.indigo-500</span></div>
+                                        <div class="txt_color_example indigo-400"><span>.indigo-400</span></div>
+                                        <div class="txt_color_example indigo-300"><span>.indigo-300</span></div>
+                                        <div class="txt_color_example indigo-200"><span>.indigo-200</span></div>
+                                        <div class="txt_color_example indigo-100"><span>.indigo-100</span></div>
+                                        <div class="txt_color_example indigo-50"><span>.indigo-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example blue"><span>.blue</span></div>
+                                        <div class="txt_color_example blue-900"><span>.blue-900</span></div>
+                                        <div class="txt_color_example blue-800"><span>.blue-800</span></div>
+                                        <div class="txt_color_example blue-700"><span>.blue-700</span></div>
+                                        <div class="txt_color_example blue-600"><span>.blue-600</span></div>
+                                        <div class="txt_color_example blue-500"><span>.blue-500</span></div>
+                                        <div class="txt_color_example blue-400"><span>.blue-400</span></div>
+                                        <div class="txt_color_example blue-300"><span>.blue-300</span></div>
+                                        <div class="txt_color_example blue-200"><span>.blue-200</span></div>
+                                        <div class="txt_color_example blue-100"><span>.blue-100</span></div>
+                                        <div class="txt_color_example blue-50"><span>.blue-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example light-blue"><span>.light-blue</span></div>
+                                        <div class="txt_color_example light-blue-900"><span>.light-blue-900</span></div>
+                                        <div class="txt_color_example light-blue-800"><span>.light-blue-800</span></div>
+                                        <div class="txt_color_example light-blue-700"><span>.light-blue-700</span></div>
+                                        <div class="txt_color_example light-blue-600"><span>.light-blue-600</span></div>
+                                        <div class="txt_color_example light-blue-500"><span>.light-blue-500</span></div>
+                                        <div class="txt_color_example light-blue-400"><span>.light-blue-400</span></div>
+                                        <div class="txt_color_example light-blue-300"><span>.light-blue-300</span></div>
+                                        <div class="txt_color_example light-blue-200"><span>.light-blue-200</span></div>
+                                        <div class="txt_color_example light-blue-100"><span>.light-blue-100</span></div>
+                                        <div class="txt_color_example light-blue-50"><span>.light-blue-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example cyan"><span>.cyan</span></div>
+                                        <div class="txt_color_example cyan-900"><span>.cyan-900</span></div>
+                                        <div class="txt_color_example cyan-800"><span>.cyan-800</span></div>
+                                        <div class="txt_color_example cyan-700"><span>.cyan-700</span></div>
+                                        <div class="txt_color_example cyan-600"><span>.cyan-600</span></div>
+                                        <div class="txt_color_example cyan-500"><span>.cyan-500</span></div>
+                                        <div class="txt_color_example cyan-400"><span>.cyan-400</span></div>
+                                        <div class="txt_color_example cyan-300"><span>.cyan-300</span></div>
+                                        <div class="txt_color_example cyan-200"><span>.cyan-200</span></div>
+                                        <div class="txt_color_example cyan-100"><span>.cyan-100</span></div>
+                                        <div class="txt_color_example cyan-50"><span>.cyan-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example teal"><span>.teal</span></div>
+                                        <div class="txt_color_example teal-900"><span>.teal-900</span></div>
+                                        <div class="txt_color_example teal-800"><span>.teal-800</span></div>
+                                        <div class="txt_color_example teal-700"><span>.teal-700</span></div>
+                                        <div class="txt_color_example teal-600"><span>.teal-600</span></div>
+                                        <div class="txt_color_example teal-500"><span>.teal-500</span></div>
+                                        <div class="txt_color_example teal-400"><span>.teal-400</span></div>
+                                        <div class="txt_color_example teal-300"><span>.teal-300</span></div>
+                                        <div class="txt_color_example teal-200"><span>.teal-200</span></div>
+                                        <div class="txt_color_example teal-100"><span>.teal-100</span></div>
+                                        <div class="txt_color_example teal-50"><span>.teal-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example green"><span>.green</span></div>
+                                        <div class="txt_color_example green-900"><span>.green-900</span></div>
+                                        <div class="txt_color_example green-800"><span>.green-800</span></div>
+                                        <div class="txt_color_example green-700"><span>.green-700</span></div>
+                                        <div class="txt_color_example green-600"><span>.green-600</span></div>
+                                        <div class="txt_color_example green-500"><span>.green-500</span></div>
+                                        <div class="txt_color_example green-400"><span>.green-400</span></div>
+                                        <div class="txt_color_example green-300"><span>.green-300</span></div>
+                                        <div class="txt_color_example green-200"><span>.green-200</span></div>
+                                        <div class="txt_color_example green-100"><span>.green-100</span></div>
+                                        <div class="txt_color_example green-50"><span>.green-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example light-green"><span>.light-green</span></div>
+                                        <div class="txt_color_example light-green-900"><span>.light-green-900</span></div>
+                                        <div class="txt_color_example light-green-800"><span>.light-green-800</span></div>
+                                        <div class="txt_color_example light-green-700"><span>.light-green-700</span></div>
+                                        <div class="txt_color_example light-green-600"><span>.light-green-600</span></div>
+                                        <div class="txt_color_example light-green-500"><span>.light-green-500</span></div>
+                                        <div class="txt_color_example light-green-400"><span>.light-green-400</span></div>
+                                        <div class="txt_color_example light-green-300"><span>.light-green-300</span></div>
+                                        <div class="txt_color_example light-green-200"><span>.light-green-200</span></div>
+                                        <div class="txt_color_example light-green-100"><span>.light-green-100</span></div>
+                                        <div class="txt_color_example light-green-50"><span>.light-green-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example lime"><span>.lime</span></div>
+                                        <div class="txt_color_example lime-900"><span>.lime-900</span></div>
+                                        <div class="txt_color_example lime-800"><span>.lime-800</span></div>
+                                        <div class="txt_color_example lime-700"><span>.lime-700</span></div>
+                                        <div class="txt_color_example lime-600"><span>.lime-600</span></div>
+                                        <div class="txt_color_example lime-500"><span>.lime-500</span></div>
+                                        <div class="txt_color_example lime-400"><span>.lime-400</span></div>
+                                        <div class="txt_color_example lime-300"><span>.lime-300</span></div>
+                                        <div class="txt_color_example lime-200"><span>.lime-200</span></div>
+                                        <div class="txt_color_example lime-100"><span>.lime-100</span></div>
+                                        <div class="txt_color_example lime-50"><span>.lime-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example yellow"><span>.yellow</span></div>
+                                        <div class="txt_color_example yellow-900"><span>.yellow-900</span></div>
+                                        <div class="txt_color_example yellow-800"><span>.yellow-800</span></div>
+                                        <div class="txt_color_example yellow-700"><span>.yellow-700</span></div>
+                                        <div class="txt_color_example yellow-600"><span>.yellow-600</span></div>
+                                        <div class="txt_color_example yellow-500"><span>.yellow-500</span></div>
+                                        <div class="txt_color_example yellow-400"><span>.yellow-400</span></div>
+                                        <div class="txt_color_example yellow-300"><span>.yellow-300</span></div>
+                                        <div class="txt_color_example yellow-200"><span>.yellow-200</span></div>
+                                        <div class="txt_color_example yellow-100"><span>.yellow-100</span></div>
+                                        <div class="txt_color_example yellow-50"><span>.yellow-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example amber"><span>.amber</span></div>
+                                        <div class="txt_color_example amber-900"><span>.amber-900</span></div>
+                                        <div class="txt_color_example amber-800"><span>.amber-800</span></div>
+                                        <div class="txt_color_example amber-700"><span>.amber-700</span></div>
+                                        <div class="txt_color_example amber-600"><span>.amber-600</span></div>
+                                        <div class="txt_color_example amber-500"><span>.amber-500</span></div>
+                                        <div class="txt_color_example amber-400"><span>.amber-400</span></div>
+                                        <div class="txt_color_example amber-300"><span>.amber-300</span></div>
+                                        <div class="txt_color_example amber-200"><span>.amber-200</span></div>
+                                        <div class="txt_color_example amber-100"><span>.amber-100</span></div>
+                                        <div class="txt_color_example amber-50"><span>.amber-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example orange"><span>.orange</span></div>
+                                        <div class="txt_color_example orange-900"><span>.orange-900</span></div>
+                                        <div class="txt_color_example orange-800"><span>.orange-800</span></div>
+                                        <div class="txt_color_example orange-700"><span>.orange-700</span></div>
+                                        <div class="txt_color_example orange-600"><span>.orange-600</span></div>
+                                        <div class="txt_color_example orange-500"><span>.orange-500</span></div>
+                                        <div class="txt_color_example orange-400"><span>.orange-400</span></div>
+                                        <div class="txt_color_example orange-300"><span>.orange-300</span></div>
+                                        <div class="txt_color_example orange-200"><span>.orange-200</span></div>
+                                        <div class="txt_color_example orange-100"><span>.orange-100</span></div>
+                                        <div class="txt_color_example orange-50"><span>.orange-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example deep-orange"><span>.deep-orange</span></div>
+                                        <div class="txt_color_example deep-orange-900"><span>.deep-orange-900</span></div>
+                                        <div class="txt_color_example deep-orange-800"><span>.deep-orange-800</span></div>
+                                        <div class="txt_color_example deep-orange-700"><span>.deep-orange-700</span></div>
+                                        <div class="txt_color_example deep-orange-600"><span>.deep-orange-600</span></div>
+                                        <div class="txt_color_example deep-orange-500"><span>.deep-orange-500</span></div>
+                                        <div class="txt_color_example deep-orange-400"><span>.deep-orange-400</span></div>
+                                        <div class="txt_color_example deep-orange-300"><span>.deep-orange-300</span></div>
+                                        <div class="txt_color_example deep-orange-200"><span>.deep-orange-200</span></div>
+                                        <div class="txt_color_example deep-orange-100"><span>.deep-orange-100</span></div>
+                                        <div class="txt_color_example deep-orange-50"><span>.deep-orange-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example brown"><span>.brown</span></div>
+                                        <div class="txt_color_example brown-900"><span>.brown-900</span></div>
+                                        <div class="txt_color_example brown-800"><span>.brown-800</span></div>
+                                        <div class="txt_color_example brown-700"><span>.brown-700</span></div>
+                                        <div class="txt_color_example brown-600"><span>.brown-600</span></div>
+                                        <div class="txt_color_example brown-500"><span>.brown-500</span></div>
+                                        <div class="txt_color_example brown-400"><span>.brown-400</span></div>
+                                        <div class="txt_color_example brown-300"><span>.brown-300</span></div>
+                                        <div class="txt_color_example brown-200"><span>.brown-200</span></div>
+                                        <div class="txt_color_example brown-100"><span>.brown-100</span></div>
+                                        <div class="txt_color_example brown-50"><span>.brown-50</span></div>
+                                    </div>
+                                    <div class="txt_colors_examples">
+                                        <div class="txt_color_example grey"><span>.grey</span></div>
+                                        <div class="txt_color_example grey-900"><span>.grey-900</span></div>
+                                        <div class="txt_color_example grey-800"><span>.grey-800</span></div>
+                                        <div class="txt_color_example grey-700"><span>.grey-700</span></div>
+                                        <div class="txt_color_example grey-600"><span>.grey-600</span></div>
+                                        <div class="txt_color_example grey-500"><span>.grey-500</span></div>
+                                        <div class="txt_color_example grey-400"><span>.grey-400</span></div>
+                                        <div class="txt_color_example grey-300"><span>.grey-300</span></div>
+                                        <div class="txt_color_example grey-200"><span>.grey-200</span></div>
+                                        <div class="txt_color_example grey-100"><span>.grey-100</span></div>
+                                        <div class="txt_color_example grey-50"><span>.grey-50</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__header bg-indigo-400 card__header--padding1">
+                                    <h2 class="card__title white">Usage</h2>
+                                </div>
+                                <div class="card__content card__content--padding1"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"indigo-600"</span><span class="nt">&gt;</span>
+	Your content
+<span class="nt">&lt;/p&gt;</span>
+</pre>
+                                    <p></p>Replace the class <code>indigo-600</code> with one of the classes above.
+                                </div>
+                                <div class="card__footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Inner -->
+                </div>
+                <!-- / Content -->
+                <!-- Hub -->
+                <div class="dashboard__hub">
+                    <div class="dashboard__hub-scroll">
+                        <div class="hub">
+                            <ul class="hub__filters">
+                                <li class="active"><a href="#" class="hub__filter active">All</a></li>
+                                <li><a href="#" data-filter="email" class="hub__filter">Emails</a></li>
+                                <li><a href="#" data-filter="agenda" class="hub__filter">Agenda</a></li>
+                                <li><a href="#" data-filter="notification" class="hub__filter">Alerts</a></li>
+                                <li><a href="#" data-filter="chat" class="hub__filter">Chat</a></li>
+                            </ul>
+                            <ul class="hub__inner">
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">John Doe</span><span class="hub__entry-excerpt">Ad regiis carpento oppidum mandato agebatur nihi...</span><span class="hub__entry-time">5 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--agenda">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--agenda"><i class="material-icons">&#xE616;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Meeting with Daniel</span><span class="hub__entry-excerpt">Bellatores porrigitur gentes nec</span><span class="hub__entry-time">14 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--notification">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--notification"><i class="material-icons">&#xE7F4;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">New purchase</span><span class="hub__entry-excerpt">Suae rapidi praefectus ad mitigabat vel ad fluminis</span><span class="hub__entry-time">18 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--chat">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--chat"><i class="material-icons">&#xE0B7;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Conversation with David</span><span class="hub__entry-excerpt">Ad regiis carpento oppidum mandato agebatur nihil..</span><span class="hub__entry-time">47 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Dennis Bernard</span><span class="hub__entry-excerpt">Cautela graves aemulis sed cetera cetera...</span><span class="hub__entry-time">57 minutes ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--email">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--email"><i class="material-icons">&#xE0BE;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Jordan Wilson</span><span class="hub__entry-excerpt">Ubi velut exaggerantium pendere cruentae velut...</span><span class="hub__entry-time">1 hour ago</span></li>
+                                    </ul>
+                                </li>
+                                <li class="hub__entry hub__entry--agenda">
+                                    <ul>
+                                        <li class="hub__entry-icon hub__entry-icon--agenda"><i class="material-icons">&#xE616;</i></li>
+                                        <li class="hub__entry-information"><span class="hub__entry-title">Diner with Bill</span><span class="hub__entry-excerpt">Aliquotiens actus molliverunt quoque</span><span class="hub__entry-time">2 hours ago</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Hub -->
+            </div>
+            <!-- / Dashboard -->
+        </div>
+        <!-- / Dashboard wrapper -->
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- handsontable -->
+        <script src="vendor/handsontable/dist/handsontable.full.min.js"></script>
+        <!-- d3 -->
+        <script src="vendor/d3/d3.min.js"></script>
+        <!-- c3 -->
+        <script src="vendor/c3/c3.min.js"></script>
+        <!-- Bootstrap select -->
+        <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+        <!-- Bootgrid -->
+        <script src="vendor/jquery.bootgrid/dist/jquery.bootgrid.min.js"></script>
+        <!-- Nouislider -->
+        <script src="vendor/nouislider/distribute/nouislider.min.js"></script>
+        <!-- Nicescroll -->
+        <script src="vendor/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+        <!-- Moment -->
+        <script src="vendor/moment/min/moment.min.js"></script>
+        <!-- fullcalendar -->
+        <script src="vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+        <!-- pickadate -->
+        <script src="vendor/pickadate/lib/compressed/picker.js"></script>
+        <script src="vendor/pickadate/lib/compressed/picker.date.js"></script>
+        <!-- App -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*기본색상*/
+:root{
+  --main-color: #242020;
+}
+
+body{
+  /* max-width: var(--large-width); */
+  background-color: var(--main-color);
+}
+
+.header .carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

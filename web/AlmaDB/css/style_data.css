@@ -1,12 +1,25 @@
 @charset "UTF-8";
 
+
+
+
+
 /*기본색상*/
 :root{
   --main-color: #242020;
+  --bbq-color: #2E9BDA;
+  --boar-color: #3BBDA8;
+  --deer-color: #CB3E4B;
+  --fish-color: #A072FC;
+  --ghL-color: #5b73fc;
+  --ghR-color: #78fd9a;
+  --handaxe-color: #0058a1;
+  --think-color: #a82084;
 }
 
 body{
   /* max-width: var(--large-width); */
+  font-family: 'Nanum Square';
   background-color: var(--main-color);
 }
 

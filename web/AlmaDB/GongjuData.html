@@ -22,25 +22,13 @@
     </style>
     <!--END Loader-->
 
-    <!-- SCSS Output -->
-    <link rel="stylesheet" href="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/stylesheets/app.min.e0bb64e7.css">
-
     <!-- START Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- END Favicon -->
 
@@ -52,11 +40,19 @@
 
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <!-- Main css -->
-    <link href="css/style_data.css" rel="stylesheet" />
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="../atom.xml">
+
+    <!-- SCSS Output -->
+    <link rel="stylesheet" href="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/stylesheets/app.min.e0bb64e7.css">
+
+    <!-- Main css -->
+    <link href="css/style_data.css" rel="stylesheet" />
+    <!-- Alma style -->
+    <link href="css/almastyle.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 
     <!-- Google Analytics -->
     <script>
@@ -80,10 +76,10 @@
         <section class="header">
           <div class="row">
             <div class="col-md-12 col-xs-12">
-              <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/b9d718f06851c2b3fc6cba7cba3517cf/0b58f296-5ac1-4597-8030-6cc5254bd5b7_rw_1200.jpg?h=648ea1ff93bd18175cefd6eb9854d4a1"
+              <img src="images/HeaderImage.png"
               class="img-responsive" alt="">
               <div class="carousel-caption">
-                <p><h1>ALMALOCO</h1></p>
+                <p><h1></h1></p>
               </div>
             </div>
           </div>
@@ -94,63 +90,211 @@
             <div class="row m-t-1">
 
                 <!-- START Revenue -->
-                <div class="col-lg-3 col-md-4">
-                    <div class="panel panel-default b-a-0 bg-primary-i">
-                        <div class="panel-heading b-b-0">Users <span class="label label-white label-outline pull-right">45</span></div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="panel panel-default b-a-0  alma-bg-sum-h">
+                        <div class="panel-heading b-b-0 alma-text-white p-t-0"><h3 class="m-t-0">{{CA_box_01_title}}</h3></div>
                         <div class="panel-body text-center p-t-0">
-                            <h1 class="m-t-0 m-b-0 f-w-300">6</h1>
-                            <p class="text-white">New Users</p>
+                            <h1 class="m-t-0 m-b-0 f-w-300"><strong>{{CA_box_01_value}}</strong></h1>
+                            <h4 class="m-t-0 text-white">{{CA_box_01_tail}}</h4>
                         </div>
-                        <div class="panel-footer text-center"><a href="#" class="text-muted">See More<i class="m-l-1 fa fa-angle-right"></i></a></div>
                     </div>
                 </div>
                 <!-- END Revenue -->
 
-                <!-- START Total Item Sold -->
-                <div class="col-lg-3 col-md-4">
-                    <div class="panel panel-default b-a-0 bg-gray-dark bg-success-i">
-                        <div class="panel-heading b-b-0">Support Tickets <span class="label label-white label-outline pull-right">12</span></div>
-                        <div class="panel-body text-center p-t-0">
-                            <h1 class="m-t-0 m-b-0 f-w-300">91</h1>
-                            <p class="text-white">New Tickets</p>
-                        </div>
-                        <div class="panel-footer text-center"><a href="#" class="text-muted">See More<i class="m-l-1 fa fa-angle-right"></i></a></div>
+                <!-- START Revenue -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="panel panel-default b-a-0 alma-bg-sum-b">
+                      <div class="panel-heading b-b-0 alma-text-white p-t-0"><h3 class="m-t-0">{{CA_box_02_title}}</h3></div>
+                      <div class="panel-body text-center p-t-0">
+                          <h1 class="m-t-0 m-b-0 f-w-300"><strong>{{CA_box_02_value}}</strong></h1>
+                          <h4 class="m-t-0 text-white">{{CA_box_02_tail}}</h4>
+                      </div>
                     </div>
                 </div>
-                <!-- END Total Item Sold -->
+                <!-- END Revenue -->
 
-                <!-- START Total Visitor -->
-                <div class="col-lg-3 col-md-4">
-                    <div class="panel panel-default b-a-0 bg-gray-dark bg-warning-i">
-                        <div class="panel-heading b-b-0">Comments <span class="label label-white label-outline pull-right">3</span></div>
-                        <div class="panel-body text-center p-t-0">
-                            <h1 class="m-t-0 m-b-0 f-w-300">245</h1>
-                            <p class="text-white">New Comments</p>
-                        </div>
-                        <div class="panel-footer text-center"><a href="#" class="text-muted">See More<i class="m-l-1 fa fa-angle-right"></i></a></div>
+                <!-- START Revenue -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="panel panel-default b-a-0 alma-bg-sum-i">
+                      <div class="panel-heading b-b-0 alma-text-white p-t-0"><h3 class="m-t-0">{{CA_box_03_title}}</h3></div>
+                      <div class="panel-body text-center p-t-0">
+                          <h1 class="m-t-0 m-b-0 f-w-300"><strong>{{CA_box_03_value}}</strong></h1>
+                          <h4 class="m-t-0 text-white">{{CA_box_03_tail}}</h4>
+                      </div>
                     </div>
                 </div>
-                <!-- END Total Visitor -->
-
-                <!-- START Total Visitor -->
-                <div class="col-lg-3 col-md-4">
-                    <div class="panel panel-default b-a-0 bg-gray-dark bg-danger-i">
-                        <div class="panel-heading b-b-0">Orders <span class="label label-white label-outline pull-right">68</span></div>
-                        <div class="panel-body text-center p-t-0">
-                            <h1 class="m-t-0 m-b-0 f-w-300">88</h1>
-                            <p class="text-white">New Orders</p>
-                        </div>
-                        <div class="panel-footer text-center"><a href="#" class="text-muted">See More<i class="m-l-1 fa fa-angle-right"></i></a></div>
-                    </div>
-
-                </div>
-                <!-- END Total Visitor -->
-
-            </div>
+                <!-- END Revenue -->
+        </div>
             <!-- END ROWs #1 -->
           </section>
           <section class="contents_B">
+            <div class="row m-t-3">
+              <!-- START Chart -->
+              <div class="col-md-12 col-xs-12">
+                <h4 class="m-b-0"><strong>콘텐츠 이용횟수</strong></h4>
+                <p class="m-b-2">3면 맵핑 인터렉티브 시트지 기간별 이용 횟수</p>
 
+                <hr class="m-b-3">
+                <div class="row m-t-3">
+                    <div class="col-md-4 text-left">
+                      <span><strong>{{CB_Display_title}}</strong></span>
+                        <h1 class="display-1 m-t-0 m-b-0"><strong class="extra">{{CB_Display_countCur}}</strong> <small class="text-white" style="font-size:20px;">회 실행</small></h1>
+                        <hr>
+                        <p><span>{{CB_Display_str01}}</span><span style="margin-left:10px;"><strong class="text-white">{{CB_Display_countAvg}} 회</strong></span> </p>
+                        <p><span>{{CB_Display_str02}}</span><span style="margin-left:10px;"><strong class="text-white">{{CB_Display_countLast}} 회</strong></span></p>
+                        <div id="chart-button-set" style="margin-top: 50px;">
+                          <button type="button" v-on:click="drawChart_01(0)" class="btn btn-default btn-xs">Daily</button>
+                          <button type="button" v-on:click="drawChart_01(1)" class="btn btn-default btn-xs">Weekly</button>
+                          <button type="button" v-on:click="drawChart_01(2)" class="btn btn-default btn-xs">Monthly</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div id="almachart_02"></div>
+                    </div>
+
+                </div>
+              </div>
+              <!-- END Chart -->
+            </div>
+          </section>
+          <section class="contents_C">
+            <div class="row m-t-3 m-b-3">
+              <div class="col-md-12 col-xs-12">
+                <h4 class="m-b-2"><strong>각 시트지 별 이용 횟수</strong></h4>
+                <!-- <p class="m-b-2">3면 맵핑 인터렉티브 시트지 기간별 이용 횟수</p> -->
+
+                <div class="col-md-5">
+                  <div class="panel b-a-2">
+                    <div class="panel-heading" style="background-color:#242420;">
+                      <div class="row">
+                          <div class="col-md-7 col-xs-7">
+                              <div class="btn-group" role="group" aria-label="...">
+                                  <div class="btn-group" role="group" aria-label="...">
+                                      <button type="button" v-on:click="ChangeChartPeriod(0)"  class="btn btn-xs btn-default">Today</button>
+                                      <button type="button" v-on:click="ChangeChartPeriod(1)"  class="btn btn-xs btn-default">This Week</button>
+                                      <!-- <button type="button" class="btn btn-xs btn-default">Total</button> -->
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="col-md-3 col-xs-3 col-xs-offset-2  col-md-offset-2 text-right">
+                              <div class="btn-group" role="group" aria-label="...">
+                                  <button type="button" v-on:click="ChangeChartStyle(true)" class="btn btn-xs btn-default"><i class="fa fa-pie-chart"></i></button>
+                                  <button type="button" v-on:click="ChangeChartStyle(false)" class="btn btn-xs btn-default"><i class="fa fa-bar-chart"></i></button>
+                              </div>
+
+                          </div>
+                      </div>
+                    </div>
+                    <div class="panel-body">
+                      <div id="almachart_03"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7" style="position:alsolute; top:50%;">
+                  <div class="row b-a-2">
+                    <div class="col-md-12" style="padding-left: 50px;">
+                      <img class="img-circle" v-on:click="UpdateChartColor(1)" style="border: 2px solid #2E9BDA" src="../images/almadb_gongju/1.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(2)" style="border: 2px solid #3BBDA8" src="../images/almadb_gongju/2.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(3)" style="border: 2px solid #CB3E4B" src="../images/almadb_gongju/3.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(4)" style="border: 2px solid #A072FC" src="../images/almadb_gongju/4.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(5)" style="border: 2px solid #5b73fc" src="../images/almadb_gongju/5.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(6)" style="border: 2px solid #78fd9a" src="../images/almadb_gongju/6.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(7)" style="border: 2px solid #0058a1" src="../images/almadb_gongju/7.png" width="50" height="50" />
+                      <img class="img-circle" v-on:click="UpdateChartColor(8)" style="border: 2px solid #a82084" src="../images/almadb_gongju/8.png" width="50" height="50" />
+                    </div>
+                    <div class="col-md-12 b-t-1 p-t-2" style="margin-top:10px; height: 50px;">
+                      <div class="col-md-3">
+                        <div class="img-rounded" v-bind:class="CC_Main_Color" style="width:18px; height:18px; float:right;"></div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="text-white" style="height:20px;">
+                          {{CC_Main_Title}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-t-3">
+                    <div class="col-md-4 bg-gray-darker b-a-1 b-gray">
+                      <div class="panel-heading text-white">
+                        {{CC_substring_01}}
+                      </div>
+                      <div class="panel-body">
+                        <h2 style="margin-top:0px; margin-bottom:0px;"><strong class="extra">{{CC_Display_Cur}}</strong></h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4 bg-gray-darker b-a-1 b-gray">
+                      <div class="panel-heading text-white">
+                        {{CC_substring_02}}
+                      </div>
+                      <div class="panel-body">
+                        <h2 style="margin-top:0px; margin-bottom:0px;"><strong class="extra">{{CC_Display_Avg}}</strong></h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4 bg-gray-darker b-a-1 b-gray">
+                      <div class="panel-heading text-white">
+                        Total
+                      </div>
+                      <div class="panel-body">
+                        <h2 style="margin-top:0px; margin-bottom:0px;"><strong class="extra">{{CC_Display_Total}}</strong></h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-t-3">
+                    <div id="almachart_04"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer">
+            <div class="row m-t-3 m-b-3">
+              <div class="col-md-12 col-xs-12">
+                <h4 class="m-b-0"><strong>Contact</strong></h4>
+                <div class="m-t-2">
+                  <div class="b-a-1 b-gray-lighter" style="height:30px;">
+                    <div class="col-md-3 col-xs-6 text-white">
+                      {{FT_Subject_01}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Name_01}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Phone_01}}
+                    </div><div class="col-md-3 col-xs-6 text-primary">
+                      {{FT_Email_01}}
+                    </div>
+                  </div>
+                  <div class="b-a-1 b-gray-lighter" style="height:30px;">
+                    <div class="col-md-3 col-xs-6 text-white">
+                      {{FT_Subject_02}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Name_02}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Phone_02}}
+                    </div><div class="col-md-3 col-xs-6 text-primary">
+                      {{FT_Email_02}}
+                    </div>
+                  </div>
+                  <div class="b-a-1 b-gray-lighter" style="height:30px;">
+                    <div class="col-md-3 col-xs-6 text-white">
+                      {{FT_Subject_03}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Name_03}}
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-gray-lighter">
+                      {{FT_Phone_03}}
+                    </div><div class="col-md-3 col-xs-3 text-primary">
+                      {{FT_Email_03}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
       </section>
@@ -166,10 +310,13 @@
     <!-- Bower Libraries Styles -->
     <link rel="stylesheet" href="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/vendor/css/lib.min.css">
 
-    <!-- <script src="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/javascript/app.min.13a3a368.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
 
-    <!-- <script src="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/javascript/plugins-init.js"></script> -->
-    <!-- <script src="SPIN-Dashboard-Package-1.3.4/Full-Version-HTML/assets/javascript/switchery-settings.js"></script> -->
+    <script src="js/themes/darkbasic.js" type="text/javascript"></script>
+    <!-- <script src="assets/javascript/app.min.13a3a368.js"></script> -->
+
+    <!-- <script src="assets/javascript/plugins-init.js"></script> -->
+    <!-- <script src="assets/javascript/switchery-settings.js"></script> -->
 
   </body>
 </html>

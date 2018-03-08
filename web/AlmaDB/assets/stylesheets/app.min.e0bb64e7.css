@@ -2411,7 +2411,8 @@ ul.tab-color-rangoon>li.active>a,ul.tab-color-rangoon>li.active>a:focus,ul.tab-c
 .timeline .timeline-item .timeline-item-inner{padding:10px;position:relative}
 .timeline .timeline-item .timeline-item-head{border-bottom:1px solid #262626;margin-bottom:8px;padding-bottom:8px}
 .timeline .timeline-item .timeline-item-head .user-detail h5{margin:0 0 2px}
-.timeline .timeline-item .timeline-item-head .post-type>p{font-weight:700;text-transform:uppercase;font-size:.7em;margin:0;line-height:17px}
+.timeline .timeline-item .timeline-item-head .post-type>p{font-weight:700;text-transform:uppercase;font-size:.7em;margin:0;line-
+  :17px}
 .timeline .timeline-item .timeline-item-head .post-time>p{text-transform:uppercase;letter-spacing:1px;font-size:.6em;line-height:15px;margin:0}
 .timeline .timeline-item .timeline-item-content p{color:#585b5e;font-size:.9em;margin:0}
 .timeline .timeline-item .timeline-icon:before{background:#262626;border-radius:2px;bottom:-28px;content:"";height:100%;left:-14px;position:absolute;width:1px}

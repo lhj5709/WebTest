@@ -133,6 +133,7 @@ var Instance = new Vue({
   },
   methods: {
     loadData: function(){
+
       // jquery load json
       $.getJSON('http://ec2-52-79-38-193.ap-northeast-2.compute.amazonaws.com/almadb/expcount/',
       function(data) {
@@ -626,36 +627,38 @@ var Instance = new Vue({
                    setInterval(function() {
 
                      for(i = 0; i < 8; i++){
-                       almachart_CC.series[i].options.color = '#5c5c5c';
+                       // almachart_CC.series[i].options.color = '#5c5c5c';
                        almachart_CC.series[i].options.zIndex = 1;
+                       almachart_CC.series[i].options.lineWidth = 1;
                        almachart_CC.series[i].update(almachart_CC.series[i].options);
                      }
                      var target = Instance.CC_SelectedItem - 1;
-                     if(Instance.CC_SelectedItem == 1){
-                       almachart_CC.series[target].options.color = '#2E9BDA';
-                     }
-                     else if(Instance.CC_SelectedItem == 2){
-                       almachart_CC.series[target].options.color = '#3BBDA8';
-                     }
-                     else if(Instance.CC_SelectedItem == 3){
-                       almachart_CC.series[target].options.color = '#CB3E4B';
-                     }
-                     else if(Instance.CC_SelectedItem == 4){
-                       almachart_CC.series[target].options.color = '#A072FC';
-                     }
-                     else if(Instance.CC_SelectedItem == 5){
-                       almachart_CC.series[target].options.color = '#5b73fc';
-                     }
-                     else if(Instance.CC_SelectedItem == 6){
-                       almachart_CC.series[target].options.color = '#78fd9a';
-                     }
-                     else if(Instance.CC_SelectedItem == 7){
-                       almachart_CC.series[target].options.color = '#0058a1';
-                     }
-                     else if(Instance.CC_SelectedItem == 8){
-                       almachart_CC.series[target].options.color = '#a82084';
-                     }
+                     // if(Instance.CC_SelectedItem == 1){
+                     //   almachart_CC.series[target].options.color = '#2E9BDA';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 2){
+                     //   almachart_CC.series[target].options.color = '#3BBDA8';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 3){
+                     //   almachart_CC.series[target].options.color = '#CB3E4B';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 4){
+                     //   almachart_CC.series[target].options.color = '#A072FC';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 5){
+                     //   almachart_CC.series[target].options.color = '#5b73fc';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 6){
+                     //   almachart_CC.series[target].options.color = '#78fd9a';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 7){
+                     //   almachart_CC.series[target].options.color = '#0058a1';
+                     // }
+                     // else if(Instance.CC_SelectedItem == 8){
+                     //   almachart_CC.series[target].options.color = '#a82084';
+                     // }
                      almachart_CC.series[target].options.zIndex = 2;
+                     almachart_CC.series[target].options.lineWidth = 5;
                      almachart_CC.series[target].update(almachart_CC.series[target].options);
                      //console.log(almachart_CC.series[target].data);
                    }, 1000);
